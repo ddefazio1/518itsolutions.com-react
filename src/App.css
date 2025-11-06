@@ -1,0 +1,18 @@
+/* small global helpers */
+html, body, #root { height: 100%; }
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.page { flex: 1 0 auto; padding-top: 24px; }
+
+/* make sure images don't overflow cards on mobile */
+.card img { width: 100%; height: auto; display: block; }
+
+/* active nav link style */
+.main-nav a.active {
+  box-shadow: inset 0 -3px 0 rgba(0,123,255,0.2);
+}
+
+/* reduce card padding slightly on tiny screens */
+@media (max-width: 420px) {
+  .card { padding: 18px; border-radius: 8px; }
+  .brand h1 { font-size: 1rem; }
+}
